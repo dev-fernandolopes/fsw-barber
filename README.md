@@ -44,6 +44,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4. Criar as tabelas no "schema.prisma"
 5. npx prisma migrate dev --name init_db
    - Cria a migration
+6. Criou o arquivo "/prisma/seed.ts", para inicializar alguns dados no BD
+7. Adicionou comando no "package.json" para rodar o seed
+   "prisma": {
+   "seed": "ts-node prisma/seed.ts"
+   }
+8. npm i -D ts-node (rodar o comando que inicializa o seed no BD)
+9. npx prisma db seed
 
 Obs: usar "npx prisma format" para identar arquivo ".prisma"
 
